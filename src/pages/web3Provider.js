@@ -51,7 +51,7 @@ const telos = {
   };
 
 const { chains, publicClient } = configureChains(
-    [ telos, baseGoerli, optimismGoerli, opBNBTestnet, sepolia ],
+    [ telos, baseGoerli, optimismGoerli, sepolia ],
     [
       alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
       publicProvider()

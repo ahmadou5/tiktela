@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter, Questrial } from 'next/font/google'
 import Link from 'next/link'
+import Head from 'next/head'
 import { Navbar } from '@/components/Navbar'
 
 
@@ -13,7 +14,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+    
     <main className={`${questrial.className} relative flex max-h-screen justify-between`}>
+      <Head>
+        <title>TikTela</title>
+        <meta name="description" content="An On-Chain Event Management Protocol On Telos Chain"></meta>
+      </Head>
       <Navbar />
       <div className='w-[80%] ml-auto mt-[240px] mr-auto text-center h-screen'>
       <div className=" text-white text-center xl:text-center pr-[1.06rem] sm:pr-8 ">

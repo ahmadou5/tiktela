@@ -23,7 +23,7 @@ export default function Create() {
           'AHM',
           123333333
         ],
-        gas: 40000,
+        gas: 3000000,
       });
       const {
         write: mint,
@@ -46,7 +46,9 @@ export default function Create() {
     return(
     <div className="flex">
         <Navbar />
+        
         <div className="mt-20 w-[100%] ml-auto mr-auto ">
+            {isError && <div className="text-white w-[80%] h-12 mt-40 bg-red-700">Error</div>}
             { isOpen ? <div className="w-[100%] h-auto ml-auto mr-auto mt-3"><CreateModal/></div> :
              (
               <div className="h-10 flex items-center w-[50% ml-auto mr-auto mt-[300px] ">
