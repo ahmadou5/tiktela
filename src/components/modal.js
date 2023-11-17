@@ -84,7 +84,7 @@ export const Modal = ({
             }}
             className="bg-green-500/70  disabled:bg-green-600/80 hover:bg-green-500/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
           >
-            {isLoading ? 'Booking': 'Book'}
+            {isLoading ? 'Booking...': 'Book'}
           </button>
           }
             
