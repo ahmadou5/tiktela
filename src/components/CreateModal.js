@@ -37,7 +37,7 @@ export const CreateModal = () => {
       <div className="bg-[#1D1C20] rounded-[0.625rem] p-6 xl:p-8 pt-10 w-[90%] md:w-full h-fit max-h-[90vh] overflow-y-auto max-w-[45rem]">
         <section className="text-white pb-[1.5rem] flex justify-between items-center border-b border-[#26272b]">
           <h1 className="tracking-[-0.015rem] text-xl md:text-2xl">
-            {isLoading && <>Hello</>}
+           Set Event Data
           </h1>
           
         </section>
@@ -139,7 +139,7 @@ export const CreateModal = () => {
              
               className="bg-[#C38CC3] disabled:bg-[#C38CC3]/80 hover:bg-[#C38CC3]/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
             >
-              {'Create Event'}
+              {'Set Event'}
             </button>
           </div>
       </div>

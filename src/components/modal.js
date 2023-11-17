@@ -16,11 +16,10 @@ export const Modal = ({
   contract,
   
 }) => {
-  const [isOpen, setIsOpen] = useState(false)
-    //const smartWalletAddress = useAddress();
-  {/**  const { address:userAddress } = useAccount()
-  // Fetch owned NFTs
-    //const { contract, error:contractErr } = useContract("0x967e19C9a147d7EDB5cc3Bbdd91bE77A15D237E2");
+  
+
+    const { address:userAddress } = useAccount()
+
     const error = false
     const [isOpen, setIsOpen] = useState(false)
     const { config: MintEvent } = usePrepareContractWrite({
@@ -28,7 +27,7 @@ export const Modal = ({
         abi: Event.abi,
         functionName: "mintNFT",
         args: [userAddress, 'no uri'],
-        gas: 40000,
+        gas: 400000,
       });
       const {
         write: mint,
@@ -39,7 +38,7 @@ export const Modal = ({
      const handleMint = async () => {
         await mint?.();
         alert('workin')
-     } **/}
+     }
     return(
     <div className="mt-20">
         <main
@@ -69,15 +68,25 @@ export const Modal = ({
         <div className={`flex flex-col ${isOpen ? 'flex' : 'hidden'} gap-6`}>
 
           <div  className="flex gap-2  md:items-center mt-4 ml-auto w-fit">
-            <button
+            {isSuccess ? <button
               onClick={() => {
                //handleMint()
                alert('ji')
               }}
-              className="bg-[#C38CC3] disabled:bg-[#C38CC3]/80 hover:bg-[#C38CC3]/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
+              className="bg-green-500/70  disabled:bg-green-600/80 hover:bg-green-500/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
             >
-              {'Book'}
-            </button>
+              {'Booked'}
+            </button> : 
+            <button
+            onClick={() => {
+             handleMint()
+             alert('ji')
+            }}
+            className="bg-green-500/70  disabled:bg-green-600/80 hover:bg-green-500/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
+          >
+            {isLoading ? 'Booking': 'Book'}
+          </button>
+          }
             
           </div>
         </div>

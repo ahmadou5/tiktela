@@ -31,7 +31,7 @@ export const Navbar = () => {
               <div className=" items-end mr-0">
               <div className="w-[280px] ml-auto mr-3">
                 {/**<ConnectWallet/>**/}
-           {/** <ConnectButton.Custom>
+           <ConnectButton.Custom>
               {({
                 account,
                 chain,
@@ -134,7 +134,7 @@ export const Navbar = () => {
               })()}
             </div>)
               }}
-            </ConnectButton.Custom> */}
+            </ConnectButton.Custom>
             </div>
 
               </div>
@@ -171,7 +171,7 @@ export const Navbar = () => {
           </div>
           {/**<ConnectWallet className="h-12" />**/}
           <div className="w-[280px] ml-[60px] mr-[0px]">
-            {/**<ConnectButton.Custom>
+            <ConnectButton.Custom>
               {({
                 account,
                 chain,
@@ -274,7 +274,7 @@ export const Navbar = () => {
               })()}
             </div>)
               }}
-            </ConnectButton.Custom> */}
+            </ConnectButton.Custom> 
             </div>
 
         </div>
