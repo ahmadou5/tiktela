@@ -1,13 +1,19 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Inter, Questrial } from 'next/font/google'
 import Link from 'next/link'
 import { Navbar } from '@/components/Navbar'
 
+
+const questrial = Questrial({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-questrial",
+});
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className="flex max-h-screen justify-between">
+    <main className={`${questrial.variable} ${NeueHaasDisplay.variable} relative flex max-h-screen justify-between`}>
       <Navbar />
       <div className='w-[80%] ml-auto mt-[240px] mr-auto text-center h-screen'>
       <div className=" text-white text-center xl:text-center pr-[1.06rem] sm:pr-8 ">
