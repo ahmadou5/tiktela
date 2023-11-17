@@ -35,7 +35,7 @@ export default function Create() {
      const handleDeploy = async () => {
        try {
         await mint?.();
-        alert('clicked')
+        
        } catch (error) {
         alert(error);
         console.log(error)

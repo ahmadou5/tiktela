@@ -26,8 +26,7 @@ export default function Home() {
         </h1>
         <p className="text-[#D1D1D6] mt-11 mb-8 tracking-[-0.01125rem] text-lg md:text-xl w-full xl:pr-52">
           Easily Create and Maintain Events with our easy to use platform, Create Your Events, Sell Tickets to
-          your audiance Securely and Seemlessly on
-         
+          your audiance Securely and Seemlessly on {' '}
           <span className="text-green-400/60">TickTela</span>
         </p>
         <div className="flex justify-center items-center xl:justify-start">

@@ -137,7 +137,7 @@ export const CreateModal = () => {
             </button>
             <button
              
-              className="bg-[#C38CC3] disabled:bg-[#C38CC3]/80 hover:bg-[#C38CC3]/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
+              className="bg-green-500/70  disabled:bg-green-600/80 hover:bg-green-500/80 w-[10.625rem] ml-auto text-center rounded-[0.625rem] p-[0.625rem] border-[0.5px] border-[#424242] text-[#1D1C20] text-[0.875rem]"
             >
               {'Set Event'}
             </button>
