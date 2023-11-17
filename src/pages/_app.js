@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import { EthProvider } from './web3Provider'
+import EthProvider  from './web3Provider'
 
 export default function App({ Component, pageProps }) {
   return (
