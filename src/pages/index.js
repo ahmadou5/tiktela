@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={`${questrial.variable} ${NeueHaasDisplay.variable} relative flex max-h-screen justify-between`}>
+    <main className={`${questrial.className} relative flex max-h-screen justify-between`}>
       <Navbar />
       <div className='w-[80%] ml-auto mt-[240px] mr-auto text-center h-screen'>
       <div className=" text-white text-center xl:text-center pr-[1.06rem] sm:pr-8 ">
