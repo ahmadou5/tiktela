@@ -41,7 +41,7 @@ const { chains, publicClient } = configureChains(
   })
 
   
-export default function EthProvider ({children}) {
+export const EthProvider = ({children}) => {
     return (
       <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider coolMode theme={darkTheme()} chains={chains}>
