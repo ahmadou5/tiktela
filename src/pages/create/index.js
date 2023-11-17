@@ -23,7 +23,7 @@ export default function Create() {
           'AHM',
           123333333
         ],
-        gas: 4000000,
+        gas: 40000,
       });
       const {
         write: mint,

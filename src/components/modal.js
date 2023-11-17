@@ -27,7 +27,7 @@ export const Modal = ({
         abi: Event.abi,
         functionName: "mintNFT",
         args: [userAddress, 'no uri'],
-        gas: 400000,
+        gas: 40000,
       });
       const {
         write: mint,
