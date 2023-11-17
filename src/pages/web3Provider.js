@@ -11,9 +11,13 @@ import {
   mainnet,
   polygon,
   optimism,
+  optimismGoerli,
+  sepolia,
+  baseGoerli,
   arbitrum,
   base,
   zora,
+  opBNBTestnet,
 } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -47,7 +51,7 @@ const telos = {
   };
 
 const { chains, publicClient } = configureChains(
-    [ telos ],
+    [ telos, baseGoerli, optimismGoerli, opBNBTestnet, sepolia ],
     [
       alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
       publicProvider()
