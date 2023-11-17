@@ -22,7 +22,7 @@ export const Navbar = () => {
           <div className="ml-0 mr-auto mt-auto mb-auto">
             <Link href={"/"}>
               <div className="text-xl font-semibold flex">
-                <p className="text-white text-3xl font-thin ml-1">Tick<span className="text-green-400">Tela</span></p>
+                <p className="text-white text-3xl font-thin ml-1">Tik<span className="text-green-400">Tela</span></p>
               </div>
             </Link>
           </div>
@@ -153,7 +153,7 @@ export const Navbar = () => {
             <Link href={"/"}>
               <div className="text-sm flex">
                 {/**<img className="w-[52px] h-[52px]" src="./assets/body.png" />**/}
-                <p className="text-white text-3xl font-thin ml-1">Tick<span className="text-green-400">Tela</span></p>
+                <p className="text-white text-3xl font-thin ml-1">Tik<span className="text-green-400">Tela</span></p>
               </div>
             </Link>
           </div>

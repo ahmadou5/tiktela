@@ -1,7 +1,6 @@
 'use client'
 import CustomInput from "./CustomInput";
 import { Event } from "@/utils/Contracts";
-import { useAddress, useContract, useOwnedNFTs, Web3Button } from "@thirdweb-dev/react";
 import { useState } from "react";
 import {
     useContractWrite,

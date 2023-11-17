@@ -18,9 +18,9 @@ export default function Home() {
       <div className='w-[80%] ml-auto mt-[240px] mr-auto text-center h-screen'>
       <div className=" text-white text-center xl:text-center pr-[1.06rem] sm:pr-8 ">
         <h1 className="lg:text-5xl text-xl  mb-8 sm:mb-2 sm:text-[2.5rem] tracking-[-0.075rem] sm:leading-[3.375rem]">
-          Welcome to
+          Welcome to{' '}
           <span className="bg-green-400/70 bg-clip-text text-transparent">
-            TickTela
+            TickTela {' '}
           </span>
           the On-Chain Event Management Protocol
         </h1>
